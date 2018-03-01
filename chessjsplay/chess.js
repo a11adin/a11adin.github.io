@@ -276,7 +276,7 @@
     bs=obs; ws=ows; bm=m[i];
    }
   }
-  ma(b,bm); sm(bm); nx(); st("Время на ход "+(new Date()-now)/1000+" сек.");
+  ma(b,bm); sm(bm); nx(); st("Г‚Г°ГҐГ¬Гї Г­Г  ГµГ®Г¤ "+(new Date()-now)/1000+" Г±ГҐГЄ.");
  }
 
  cpw=0; cpb=1;
@@ -318,12 +318,12 @@
     if (m[i].x==px&&m[i].y==py&&m[i].X==x&&m[i].Y==y&&ge(b,x,y)!=6) {
      var u=ma(b,m[i]); var o=fi(b,c^192);
      for (var j=0;j<o.length;++j) if (ge(b,o[j].X,o[j].Y)==6&&sa(b,o[j].X,o[j].Y,c)) {
-      un(u,b); st("Неверный ход!"); return;
+      un(u,b); st("ГЌГҐГўГҐГ°Г­Г»Г© ГµГ®Г¤!"); return;
      }
      sm(m[i]); nx(); return;
     }
    }
-   st("Неверный ход!");
+   st("ГЌГҐГўГҐГ°Г­Г»Г© ГµГ®Г¤!");
   }
  }
 
@@ -348,7 +348,7 @@
    for (var j=0;j<om.length;++j) if (om[j].X==kx&&om[j].Y==ky) hm=1; cm&=hm;
   }
   if (cm) {
-   alert(ic?"Мат!":"Пат!"); F=3; return;
+   alert(ic?"РњР°С‚!":"РџР°С‚!"); F=3; return;
   }
   if ((cpw&&c==64)||(cpb&&c==128)) {
    F=2; setTimeout("cpu()",500);
