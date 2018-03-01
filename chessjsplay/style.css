@@ -1,0 +1,54 @@
+body {
+ background-color: #EEEEEE;
+ overflow: scroll;
+}
+th,td,p { 
+ font-family: Verdana, Arial, Helvetica, sans-serif;
+ font-size : 12px; 
+ line-height: 18px;
+}
+h3,h4,h5,p,ul,ol,dl,pre,blockquote {
+ margin-top: 5px;
+ margin-bottom: 5px;
+}
+small {
+ font-family: Verdana, Arial, Helvetica, sans-serif;
+ font-size : 9px; 
+ line-height: 12px;
+}
+a:link,a:active { 
+ text-decoration: none; color : #006699; 
+}
+a:visited {
+ text-decoration: none; color : #003399; 
+}
+a:hover	{ 
+ text-decoration: underline; color : #DD6900; 
+}
+a[target="_blank"] { 
+ background-color: #FFFF99;
+}
+a {
+ background-color: expression((this.getAttribute("target") && this.getAttribute("target")=="_blank") ? "#FFFF99" : "transparent");
+}
+pre {
+ font-family: "Courier New", sans-serif; font-size: 11px; color: #006600;
+ background-color: #FAFAFA; border: #D1D7DC; border-style: solid;
+ border-width: 1px;
+}
+blockquote {
+ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; color: #444444; line-height: 125%;
+ background-color: #FAFAFA; border: #D1D7DC; border-style: solid;
+ border-width: 1px;
+}
+form {
+ margin: 3px 2px 3px 3px; 
+}
+input,textarea,select {
+ color : #000000;
+ background-color : #FFFFFF;
+ font: normal 12px Verdana, Arial, Helvetica, sans-serif;
+ border-color : #000000;
+ border-width: 1px;
+}
+input { text-indent : 2px; }
