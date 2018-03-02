@@ -2,10 +2,10 @@
 <head>
     <meta Charset = "UTF-8">
     <title>Курсовая работа</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>  
 	<script>
-		var day_description = "Отчисления";
 		var today = new Date();
 		var year = today.getYear();
 		if ((navigator.appName == "Microsoft Internet Explorer") && (year < 2000))		
@@ -17,10 +17,12 @@
 		var days = Math.floor(diff / (1000 * 60 * 60 * 24));
 
 		document.write("<center><h1>")
-		document.write("Осталось " + (days+1) + " дней до " + day_description + "!");
+		document.write("Осталось " + (days+1) + " дней до отчисления!");
 	</script>
-	<form>
-<input type="button" value="Играть в шахматы" onClick='location.href="chessjsplay/chess.html"'>
-</form>
+<br />
+<button class= "chessButton" onclick="location.href = 'chessjsplay/chess.html'">
+	Играть в шахматы
+</button>
+
 </body>
 </html>
