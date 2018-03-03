@@ -1,28 +1,72 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE HTML>
+<html>
 <head>
-    <meta Charset = "UTF-8">
-    <title>Курсовая работа</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8">
+  <title>ALADIN</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 </head>
-<body>  
-	<script>
-		var today = new Date();
-		var year = today.getYear();
-		if ((navigator.appName == "Microsoft Internet Explorer") && (year < 2000))		
-		year="19" + year;
-		if (navigator.appName == "Netscape")
-		year=1900 + year;
-		var date = new Date("March 31, " + year);
-		var diff = date.getTime() - today.getTime();
-		var days = Math.floor(diff / (1000 * 60 * 60 * 24));
-
-		document.write("<center><h1>")
-		document.write("Осталось " + (days+1) + " дней до отчисления!");
-	</script>
-<br />
-<button class= "chessButton" onclick="location.href = 'chessjsplay/chess.html'">
-	Играть в шахматы
-</button>
-
+<body>
+  <header>
+    <div class="logo">
+      <a href="HTML.html"><img class="graficlogo" src="image/logo1.png" alt="LOGO"></a>
+    </div>
+    <nav>
+      <div class="topnav" id="myTopnav">
+        <a href="HTML.html">HOME</a>
+        <a href="game2.html">ABOUT US</a>
+        <a href="game2.html">PROGECTS</a>
+        <a href="game3.html">CONTACTS</a>
+        <a href="game4.html">GAMES 4</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <img src="" alt="" class="mw-100">
+    <div class="advanteges_conteiner">
+       <div class="advanteges">
+          <div class="advanteges_item">
+             <a href="chessjsplay/chess.html"><img src="image/1.png" width="200" height="200" alt=""></a>
+             <h2>Шахматы</h>
+             <br></br>
+          </div>
+          <div class="advanteges_item">
+<a href=""><img src="image/1.png" width="200" height="200" alt=""></a>
+             <h2>Игра №1</h>
+             <br></br>
+          </div>
+          <div class="advanteges_item">
+<a href=""><img src="image/1.png" width="200" height="200" alt=""></a>
+             <h2>Игра №2</h>
+             <br></br>
+          </div>
+          <div class="advanteges_item">
+<a href=""><img src="image/1.png" width="200" height="200" alt=""></a>
+             <h2>Игра №3</h>
+             <br></br>
+          </div>
+       </div> 
+            
+    </div>  
+  <br></br> 
+  <br></br> 
+  </main>
+  <footer>
+     <nav>
+        <a href="HTML.html">HOME</a>
+        <a href="game2.html">ABOUT US</a>
+        <a href="game2.html">PROGECTS</a>
+        <a href="game3.html">CONTACTS</a>
+        <a href="game4.html">GAMES 4</a>
+     </nav>
+     <div class="social">
+        <a href="https://www.instagram.com/" target="_blank" ><img src="image/social/inst.png" alt=""></a>
+        <a href="#" target="_blank"><img src="image/social/face.png" alt=""></a>
+        <a href="#" target="_blank"><img src="image/social/em.png" alt=""></a>
+        <a href="#" target="_blank"><img src="" alt=""></a> 
+     </div>
+  </footer>
+	
+  <script src="script.js"></script>
 </body>
 </html>
